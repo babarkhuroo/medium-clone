@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <div className='border-b border-black'></div>
       <Banner />
     </div>
   )
