@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <nav className='bg-yellow-400 border-b border-black sticky top-0'>
-      <header className='flex justify-between p-5 max-w-7xl mx-auto'>
+    <header className='bg-yellow-400 border-b border-black sticky top-0'>
+      <nav className='flex justify-between p-5 max-w-7xl mx-auto'>
         <div className='flex items-center space-x-5'>
           <Link href='/'>
             <img
@@ -30,8 +30,8 @@ function Header() {
             Get Started
           </a>
         </div>
-      </header>
-    </nav>
+      </nav>
+    </header>
   )
 }
 

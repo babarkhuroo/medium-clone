@@ -1,18 +1,17 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import { sanityClient, urlFor } from '../sanity'
+import { sanityClient } from '../sanity'
 import { groq } from 'next-sanity'
+import Head from 'next/head'
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+import Posts from '../components/Posts'
 import type { Post } from '../typings'
 
-interface Props {
+export interface Props {
   posts: [Post]
 }
 
 const Home: NextPage<Props> = ({ posts }) => {
-  console.log(posts)
-
   return (
     <div className=''>
       <Head>
@@ -22,6 +21,7 @@ const Home: NextPage<Props> = ({ posts }) => {
 
       <Header />
       <Banner />
+      <Posts posts={posts} />
     </div>
   )
 }
