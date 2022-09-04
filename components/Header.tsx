@@ -7,10 +7,9 @@ function Header() {
   const handleScroll = () => {
     const position = window.scrollY
     if (position > 400) {
-      setTop(false)
-    } else if (position < 400) {
-      setTop(true)
+      return setTop(false)
     }
+    setTop(true)
   }
 
   useEffect(() => {
