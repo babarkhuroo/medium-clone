@@ -29,8 +29,7 @@ const Home: NextPage<Props> = ({ posts }) => {
 export default Home
 
 export const getServerSideProps = async () => {
-  const query = groq`
-  *[_type == 'post'] {
+  const query = groq`*[_type == 'post'] {
     _id,
     title,
     author -> {
@@ -40,8 +39,7 @@ export const getServerSideProps = async () => {
     description,
     mainImage,
     slug
-  }
-  `
+  }`
 
   const posts = await sanityClient.fetch(query)
 
