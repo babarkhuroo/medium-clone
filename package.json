@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@portabletext/react": "^1.0.6",
+    "@portabletext/types": "^1.0.3",
     "@sanity/image-url": "^1.0.1",
     "next": "latest",
     "next-sanity": "^0.8.4",
