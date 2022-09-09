@@ -27,7 +27,7 @@ export const config = {
    * OPTIONAL config to enable authentication with custom token
    * You might need this if you host the preview on a different url than Sanity Studio
    */
-  token: process.env.SANITY_READ_TOKEN,
+  token: process.env.SANITY_API_TOKEN,
   EventSource:
     '' /* provide your own event source implementation. Required in browsers to support the above token parameter. */,
 }
