@@ -23,7 +23,7 @@ function Header() {
     <header
       className={`${
         top ? 'bg-yellow-400' : 'bg-white'
-      } border-b border-black sticky top-0 transition duration-300 ease-linear`}>
+      } border-b border-black sticky top-0 z-50 transition duration-300 ease-linear`}>
       <nav className='flex justify-between p-5 max-w-7xl mx-auto'>
         <div className='flex items-center space-x-5'>
           <Link href='/'>
