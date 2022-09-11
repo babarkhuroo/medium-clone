@@ -1,27 +1,24 @@
-# Next.js + Tailwind CSS Example
+# Medium Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![screenshot](./public/thumbnail.png)
 
-## Deploy your own
+## About
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+This is a clone of popular online publishing platform Medium. I've cloned the main page with some dummy posts. You can also navigate to each single posts and add/view comments too.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Technologies Used
 
-## How to use
+- Nextjs
+- TypeScript
+- Tailwind CSS
+- Sanity CMS
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Features
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+- Medium Clone
+- Single Page Application
+- Comments
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Live Site
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- [Medium Clone Vercel](https://medium-clone-sheikhcamel.vercel.app/)
