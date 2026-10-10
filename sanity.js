@@ -1,17 +1,13 @@
-import {
-  createPreviewSubscriptionHook,
-  createCurrentUserHook,
-  createClient,
-} from 'next-sanity'
-import createImageUrlBuilder from '@sanity/image-url'
+import { createClient } from '@sanity/client'
+import { createImageUrlBuilder } from '@sanity/image-url'
 
 export const config = {
   /**
-   * Find your project ID and dataset in `sanity.json` in your studio project.
+   * Find your project ID and dataset in `sanity.config.ts` in your studio project.
    * These are considered “public”, but you can use environment variables
    * if you want differ between local dev and production.
    *
-   * https://nextjs.org/docs/basic-features/environment-variables
+   * https://nextjs.org/docs/pages/guides/environment-variables
    **/
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
@@ -28,8 +24,6 @@ export const config = {
    * You might need this if you host the preview on a different url than Sanity Studio
    */
   token: process.env.SANITY_API_TOKEN,
-  EventSource:
-    '' /* provide your own event source implementation. Required in browsers to support the above token parameter. */,
 }
 
 // Set up the client for fetching data in the getProps page functions
@@ -40,9 +34,3 @@ export const sanityClient = createClient(config)
  * Read more: https://www.sanity.io/docs/image-url
  **/
 export const urlFor = (source) => createImageUrlBuilder(config).image(source)
-
-// Helper function for using the current logged in user account
-export const useCurrentUser = createCurrentUserHook(config)
-
-// Set up the live preview subscription hook
-export const usePreviewSubscription = createPreviewSubscriptionHook(config)

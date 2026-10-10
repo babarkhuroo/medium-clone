@@ -9,7 +9,7 @@ function Banner() {
           <p className='text-2xl pb-11 leading-none sm:w-96'>
             Discover stories, thinking, and expertise from writers on any topic.
           </p>
-          <button className='bg-gray-900 text-white text-lg rounded-full px-12 py-2 hover:bg-black'>
+          <button className='bg-gray-900 text-white text-lg rounded-full px-12 py-2 hover:bg-black cursor-pointer'>
             Start reading
           </button>
         </div>

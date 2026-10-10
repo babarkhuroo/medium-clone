@@ -1,7 +1,7 @@
 import { sanityClient, urlFor } from '../../sanity'
-import { groq } from 'next-sanity'
+import groq from 'groq'
 import Header from '../../components/Header'
-import { Post } from '../../typings'
+import type { Post } from '../../typings'
 import { PortableText } from '@portabletext/react'
 import { GetStaticProps } from 'next'
 import { useForm, SubmitHandler } from 'react-hook-form'
@@ -125,7 +125,7 @@ const Post = ({ post }: Props) => {
             <span className='text-gray-700'>Name</span>
             <input
               {...register('name', { required: true })}
-              className='shadow border rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring-2 ring-yellow-500'
+              className='shadow-sm border rounded-sm py-2 px-3 form-input mt-1 block w-full outline-hidden focus:ring-2 ring-yellow-500'
               placeholder='John Appleseed'
               type='text'
             />
@@ -134,7 +134,7 @@ const Post = ({ post }: Props) => {
             <span className='text-gray-700'>Email</span>
             <input
               {...register('email', { required: true })}
-              className='shadow border rounded py-2 px-3 form-input mt-1 block w-full outline-none focus:ring-2 ring-yellow-500'
+              className='shadow-sm border rounded-sm py-2 px-3 form-input mt-1 block w-full outline-hidden focus:ring-2 ring-yellow-500'
               placeholder='your@email.com'
               type='email'
             />
@@ -143,7 +143,7 @@ const Post = ({ post }: Props) => {
             <span className='text-gray-700'>Comment</span>
             <textarea
               {...register('comment', { required: true })}
-              className='shadow border rounded py-2 px-3 form-textarea mt-1 block w-full outline-none focus:ring-2 ring-yellow-500'
+              className='shadow-sm border rounded-sm py-2 px-3 form-textarea mt-1 block w-full outline-hidden focus:ring-2 ring-yellow-500'
               placeholder='Enter some long form content.'
               rows={8}
             />
@@ -168,13 +168,13 @@ const Post = ({ post }: Props) => {
 
           <input
             type='submit'
-            className='shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded cursor-pointer'
+            className='shadow-sm bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-hidden font-bold py-2 px-4 rounded-sm cursor-pointer'
           />
         </form>
       )}
 
       {/* Comments */}
-      <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow shadow-yellow-500 space-y-2'>
+      <div className='flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-sm shadow-yellow-500 space-y-2'>
         <h3 className='text-4xl'>Comments</h3>
         <hr className='pb-2' />
 
