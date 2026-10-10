@@ -14,7 +14,7 @@ This is a clone of popular online publishing platform Medium. I've cloned the ma
 - Tailwind CSS 4
 - Sanity CMS (Studio v6)
 
-> The original 2022 version of this project (Next.js 12, React 18, Tailwind 3, Sanity Studio v2) is preserved in the git history and tagged `v1-legacy`.
+> The original 2022 version of this project (Next.js 12, React 18, Tailwind 3, Sanity Studio v2) is preserved on the [`legacy`](https://github.com/babarkhuroo/medium-clone/tree/legacy) branch.
 
 ## Getting Started
 
