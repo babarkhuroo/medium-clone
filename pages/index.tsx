@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { sanityClient } from '../sanity'
-import { groq } from 'next-sanity'
+import groq from 'groq'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Banner from '../components/Banner'

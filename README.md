@@ -8,10 +8,28 @@ This is a clone of popular online publishing platform Medium. I've cloned the ma
 
 ## Technologies Used
 
-- Nextjs
-- TypeScript
-- Tailwind CSS
-- Sanity CMS
+- Next.js 16 (Pages Router)
+- React 19
+- TypeScript 6
+- Tailwind CSS 4
+- Sanity CMS (Studio v6)
+
+> The original 2022 version of this project (Next.js 12, React 18, Tailwind 3, Sanity Studio v2) is preserved on the [`legacy`](https://github.com/babarkhuroo/medium-clone/tree/legacy) branch.
+
+## Getting Started
+
+Requires Node.js 22.12 or newer.
+
+```bash
+# Next.js frontend
+yarn install
+NEXT_PUBLIC_SANITY_PROJECT_ID=w3qwbs3d yarn dev
+
+# Sanity Studio
+cd sanity-medium
+yarn install
+yarn dev
+```
 
 ## Features
 
